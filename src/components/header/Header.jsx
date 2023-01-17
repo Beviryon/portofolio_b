@@ -33,13 +33,13 @@ const[Toggle, showMenu] = useState(false);
                     </li>
                    
                     <li className="nav_item">
-                        <a href="#portfolio" className="nav_link">
+                        <a href="#testimonials" className="nav_link">
                             <i className="uil uil-scenery nav_icon"></i>
                             Portfolio
                         </a>
                     </li>
                     <li className="nav_item">
-                        <a href="#contct" className="nav_link">
+                        <a href="#contact" className="nav_link">
                             <i class="uil uil-message nav_icon"></i>
                             Contact
                         </a>
