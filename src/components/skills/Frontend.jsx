@@ -59,7 +59,15 @@ const Frontend = () => {
                 <i class='bx bx-badge-check'></i>
 
                 <div>
-                    <h3 className="skills_name">React.Js/Next.Js</h3>
+                    <h3 className="skills_name">Next.Js</h3>
+                    <span className="skills_leve">..................</span>
+                </div>
+                </div>
+                <div className="skills_data">
+                <i class='bx bx-badge-check'></i>
+
+                <div>
+                    <h3 className="skills_name">React.Js</h3>
                     <span className="skills_leve">..................</span>
                 </div>
                 </div>
