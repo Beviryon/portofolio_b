@@ -52,6 +52,15 @@ const Backend = () => {
                         </div>
                         </div>
 
+                        <div className="skills_data">
+                        <i class='bx bx-badge-check'></i>
+
+                        <div>
+                            <h3 className="skills_name">Microsoft Azure</h3>
+                            <span className="skills_leve">..................</span>
+                        </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
