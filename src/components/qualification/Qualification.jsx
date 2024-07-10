@@ -1,157 +1,113 @@
-import React, { useState } from 'react'
-import "./qualification.css"
+import React, { useState } from 'react';
+import './qualification.css';
 
+const Qualification = () => {
+  const [activeTab, setActiveTab] = useState('education');
 
-const Qualifiction = () => {
-  const [ toggleState, setToggleState] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  } 
+  const toggleTab = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
-    <section className="section qualification section">
-      <h2 className="section_title">Qualification</h2>
-      <span className="section_subtitle">My peronel journey</span>
+    <section className="section qualification">
+      <div className="container">
+        <h2 className="section_title">Qualification</h2>
+        <span className="section_subtitle">My personal journey</span>
 
-      <div className="qualificaton_container container">
         <div className="qualification_tabs">
-          <div className={ toggleState === 1 ? "qualification_button qualification_active button--flex" 
-          : "qualification_button button--flex"}
-          onClick={() => toggleTab(1)} >
-            <i className="uil uil-graduation-cap qualification_icon"></i>
-             Education
+          <div
+            className={`qualification_tab ${activeTab === 'education' ? 'active' : ''}`}
+            onClick={() => toggleTab('education')}
+          >
+            Education
           </div>
-
-          <div className={ toggleState === 2 ? "qualification_button qualification_active button--flex" 
-          : "qualification_button button--flex"}
-          onClick={() => toggleTab(2)}>
-            <i className="uil uil-briefcase-alt qualification_icon"></i>
-             Expérience
+          <div
+            className={`qualification_tab ${activeTab === 'experience' ? 'active' : ''}`}
+            onClick={() => toggleTab('experience')}
+          >
+            Experience
           </div>
         </div>
 
-        <div className="qualification_sections">
-          <div className={ toggleState === 1 ? "qualification_content qualification_content-active" 
-          : "qualification_content"}>
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Bachelor</h3>
-                <span className="qualification_subtitle">Etna</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2022 - Present
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
+        <div className="qualification_content">
+          {activeTab === 'education' && (
+            <div className="qualification_grid">
+              <EducationCard
+                title="Bachelor 3"
+                subtitle="EEMI"
+                period="2023 - 2024"
+              />
+              <EducationCard
+                title="Bachelor 2"
+                subtitle="Etna"
+                period="2022 - 2023"
+              />
+              <EducationCard
+                title="BTS SIO"
+                subtitle="Institut - F2I"
+                period="2021 - 2022"
+              />
+              <EducationCard
+                title="Licence 1 en Informatique"
+                subtitle="ECES"
+                period="2020 - 2021"
+              />
+              <EducationCard
+                title="Infographie"
+                subtitle="CAMI"
+                period="2020"
+              />
             </div>
+          )}
 
-            <div className="qualification_data">
-                <div></div>
-
-               <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification_title">BTS SIO</h3>
-                <span className="qualification_subtitle">Institut - F2I</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2021 - 2022
-                </div>
-              </div>
+          {activeTab === 'experience' && (
+            <div className="qualification_grid">
+              <ExperienceCard
+                title="Apprenti développeur FullStack"
+                subtitle="Eurexo Part of Ced"
+                period="2023 - 2024"
+              />
+              <ExperienceCard
+                title="Stage en Sécurité Informatique"
+                subtitle="VNB-IT"
+                period="2022"
+              />
+              <ExperienceCard
+                title="Designer"
+                subtitle="Expertise-Tic"
+                period="2021"
+              />
+              <ExperienceCard
+                title="Web Designer"
+                subtitle="Figma"
+                period="2020"
+              />
             </div>
-
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Licence 1 en Informatique</h3>
-                <span className="qualification_subtitle">ECES</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2020 - 2021
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-            </div>
-
-            <div className="qualification_data">
-                <div></div>
-
-               <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification_title">Infographie</h3>
-                <span className="qualification_subtitle">CAMI</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2020
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className={ toggleState === 2  ? "qualification_content qualification_content-active" 
-          : "qualification_content"}>
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Stage en Sécurité Informatique</h3>
-                <span className="qualification_subtitle">VNB-IT</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2022
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-            </div>
-
-            <div className="qualification_data">
-                <div></div>
-
-               <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-
-              <div>
-                <h3 className="qualification_title">Designer</h3>
-                <span className="qualification_subtitle">Expertise-Tic</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2021
-                </div>
-              </div>
-            </div>
-
-            <div className="qualification_data">
-              <div>
-                <h3 className="qualification_title">Web Designer</h3>
-                <span className="qualification_subtitle">Figma</span>
-                <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i>2020
-                </div>
-              </div>
-
-              <div>
-                <span className="qualification_rounder"></span>
-                <span className="qualification_line"></span>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </section>
-  )
-} 
+  );
+};
 
-export default Qualifiction
+const EducationCard = ({ title, subtitle, period }) => (
+  <div className="qualification_card">
+    <h3 className="qualification_title">{title}</h3>
+    <span className="qualification_subtitle">{subtitle}</span>
+    <div className="qualification_calendar">
+      <i className="uil uil-calendar-alt"></i>{period}
+    </div>
+  </div>
+);
+
+const ExperienceCard = ({ title, subtitle, period }) => (
+  <div className="qualification_card">
+    <h3 className="qualification_title">{title}</h3>
+    <span className="qualification_subtitle">{subtitle}</span>
+    <div className="qualification_calendar">
+      <i className="uil uil-calendar-alt"></i>{period}
+    </div>
+  </div>
+);
+
+export default Qualification;

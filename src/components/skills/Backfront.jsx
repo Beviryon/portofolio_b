@@ -14,22 +14,18 @@ const Backend = () => {
   ];
 
   return (
-    <div className="skills_content">
+    <div className="skills_section">
       <h3 className="skills_title">Backend Developer</h3>
-      <div className="skills_box">
-        <div className="skills_group">
-          {backendSkills.map((skill, index) => (
-            <div className="skills_card" key={index}>
-              <FontAwesomeIcon icon={skill.icon} className="skills_icon" />
-              <div className="skills_details">
-                <h3 className="skills_name">{skill.name}</h3>
-                <div className="skills_progress">
-                  <div className="skills_progress_bar" style={{ width: skill.level }}></div>
-                </div>
-              </div>
+      <div className="skills_container">
+        {backendSkills.map((skill, index) => (
+          <div className="skills_card" key={index}>
+            <FontAwesomeIcon icon={skill.icon} className="skills_icon" />
+            <h3 className="skills_name">{skill.name}</h3>
+            <div className="skills_level">
+              <div className="skills_level_bar" style={{ width: skill.level }}></div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

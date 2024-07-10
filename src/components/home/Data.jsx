@@ -55,7 +55,7 @@ const Data = () => {
         </svg>
         </h1>
 
-        <h3 className="home_subtitle">Développeur Full-Stack Junior</h3>
+        <h3 className="home_subtitle">Développeur Full-Stack</h3>
         <p className="home_description">Ma mission est de vous aider à réaliser vos projets avec ma polyvalence et ma capacité à m'adapter à différentes situations. Ensemble, 
         faisons de vos idées de grands projets !</p>
 

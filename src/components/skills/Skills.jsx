@@ -1,7 +1,9 @@
  import React from 'react'
  import "./skills.css";
+import "./style.css";
  import Frontend from './Frontend';
  import Backend from './Backend';
+//  import Backfront from './Backfront';
 
  const Skills = () => {
    return (
@@ -13,6 +15,7 @@
 
         <Frontend />
         <Backend />
+        {/* <Backfront /> */}
         </div>
     </section>
    )
