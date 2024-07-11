@@ -25,13 +25,9 @@
 .nav_toggle {
     color: var(--title-color);
     font-weight: 900;
-    top: 13px;
-    position: relative;
+    margin: 12px;
 }
 
-.nav_toggle {
-    color: #031299;
-}
 
 .nav_list {
     display: flex;
