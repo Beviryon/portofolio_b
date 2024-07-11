@@ -29,7 +29,7 @@ const Testimonials = () => {
   const displayedProjects = Data.slice(currentPage * projectsPerPage, (currentPage + 1) * projectsPerPage);
 
   return (
-    <section className="testimonial_section">
+    <section className="testimonial_section" id="testimonials">
       <h2 className="section_title">Portfolio</h2>
       <span className="section_subtitle">Mes Projets</span>
 
