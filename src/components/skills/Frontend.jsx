@@ -10,6 +10,7 @@ const Frontend = () => {
     { name: 'JavaScript', icon: faJsSquare, level: 80, class: 'skill-js' },
     { name: 'Bootstrap', icon: faBootstrap, level: 75, class: 'skill-bootstrap' },
     { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
+    { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
   ];
 
   return (

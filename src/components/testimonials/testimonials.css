@@ -26,10 +26,11 @@
     width: 250px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 0; /* Remove padding to allow the image to cover the entire card */
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    overflow: hidden; /* Ensure content does not overflow the card */
   }
   
   .testimonial_card:hover {
@@ -38,9 +39,14 @@
   
   .testimonial_img {
     width: 100%;
-    height: 200px;
-    border-radius: 5%;
-    margin-bottom: 10px;
+    height: 180px; /* Adjust height as needed */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .testimonial_content {
+    padding: 20px; /* Add padding to the content inside the card */
   }
   
   .testimonial_name {
@@ -73,13 +79,12 @@
   }
   
   /* Responsive Styles */
-  @media (max-width: 1200px) {
+  @media (max-width: 12000px) {
     .testimonial_card {
       width: 200px;
     }
     .testimonial_img {
-      width: 80px;
-      height: 80px;
+      height: 130px;
     }
     .testimonial_name {
       font-size: 18px;
@@ -91,8 +96,7 @@
       width: 180px;
     }
     .testimonial_img {
-      width: 70px;
-      height: 70px;
+      height: 120px;
     }
     .testimonial_name {
       font-size: 16px;
@@ -101,11 +105,10 @@
   
   @media (max-width: 768px) {
     .testimonial_card {
-      width: 150px;
+      width: 160px;
     }
     .testimonial_img {
-      width: 60px;
-      height: 60px;
+      height: 100px;
     }
     .testimonial_name {
       font-size: 14px;
@@ -114,11 +117,10 @@
   
   @media (max-width: 576px) {
     .testimonial_card {
-      width: 120px;
+      width: 140px;
     }
     .testimonial_img {
-      width: 50px;
-      height: 50px;
+      height: 100px;
     }
     .testimonial_name {
       font-size: 12px;
@@ -134,7 +136,7 @@
   
   .testimonial_navigation button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #8a8a8a;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -143,6 +145,6 @@
   }
   
   .testimonial_navigation button:hover {
-    background-color: #0056b3;
+    background-color: #4b4b4b;
   }
   

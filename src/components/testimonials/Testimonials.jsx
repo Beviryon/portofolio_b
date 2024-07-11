@@ -37,18 +37,20 @@ const Testimonials = () => {
         {displayedProjects.map(({ id, image, title, description, github }) => (
           <div className="testimonial_card" key={id}>
             <img src={image} alt={title} className="testimonial_img" />
-            <h3 className="testimonial_name">{title}</h3>
-            <p className="testimonial_description">{description}</p>
-            <a href={github} className="testimonial_github" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="2x" />
-            </a>
+            <div className="testimonial_content">
+              <h3 className="testimonial_name">{title}</h3>
+              <p className="testimonial_description">{description}</p>
+              <a href={github} className="testimonial_github" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+            </div>
           </div>
         ))}
       </div>
 
       <div className="testimonial_navigation">
-        <button onClick={handlePrevPage}>&lt; Précédent</button>
-        <button onClick={handleNextPage}>Suivant &gt;</button>
+        <button onClick={handlePrevPage}>Précédent</button>
+        <button onClick={handleNextPage}>Suivant</button>
       </div>
     </section>
   );
