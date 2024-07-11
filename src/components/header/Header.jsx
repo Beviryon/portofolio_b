@@ -2,13 +2,14 @@ import React from 'react'
 import { useState } from 'react'
 import "./header.css"
 
+
 const Header = () => {
     /* ::::::::::::::: Toggle Menu ::::::::::::::: */
 const[Toggle, showMenu] = useState(false);
 
   return (
     <header className="header">
-        <nav className="nav container">
+        <nav className="nav container" >
             <a href="index.html" className="nav_logo">BEVIRYON</a>
 
             <div className={Toggle ? "nav_menu show-menu" : "nav_menu"}>

@@ -2,6 +2,16 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./contact.css"
 
+const styles = {
+    card: {
+      backgroundColor: 'var(--background-color)',
+      color: 'var(--text-color)',
+      padding: '20px',
+      borderRadius: '10px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      border: '#fff',
+    },
+  };
 const Contact = () => { 
     const form = useRef();
 
@@ -15,7 +25,7 @@ const Contact = () => {
 
 
   return (
-    <section className="contact section" id="contact">
+    <section className="contact section" id="contact" style={styles.card}>
         <h2 className="section_title">Entrer en contact</h2>
         <span className="section_subtitle">Contact Me</span>
 

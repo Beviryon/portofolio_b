@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import './qualification.css';
 
+const styles = {
+  card: {
+    backgroundColor: 'var(--background-color)',
+    color: 'var(--text-color)',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 const Qualification = () => {
   const [activeTab, setActiveTab] = useState('education');
 
@@ -9,7 +18,7 @@ const Qualification = () => {
   };
 
   return (
-    <section className="section qualification">
+    <section className="section qualification"  style={styles.card}>
       <div className="container">
         <h2 className="section_title">Qualification</h2>
         <span className="section_subtitle">My personal journey</span>

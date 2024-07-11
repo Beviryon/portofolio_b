@@ -4,9 +4,18 @@ import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/bEVIRYON ISSANGA NGOULOU.pdf"
 import Info from './Info';
 
+const styles = {
+  card: {
+    backgroundColor: 'var(--background-color)',
+    color: 'var(--text-color)',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 const About = () => {
   return (
-    <section className="about section" id="about">
+    <section className="about section" id="about" style={styles.card}>
         <h2 className="section_title">A propros de Moi</h2>
         <span className="section_subtitle"> Mon introduction</span>
 

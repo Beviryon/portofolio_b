@@ -1,9 +1,18 @@
 import React from 'react'
 import "./footer.css"
 
+const styles = {
+    card: {
+      backgroundColor: 'var(--background-color)',
+      color: 'var(--text-color)',
+      padding: '20px',
+      borderRadius: '10px',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    },
+  };
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" style={styles.card}>
         <div className="footer_container container">
             <h1 className="footer_title">Beviryon</h1>
 

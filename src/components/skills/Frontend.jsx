@@ -3,6 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
 
+const styles = {
+  card: {
+    backgroundColor: 'var(--background-color)',
+    color: 'var(--text-color)',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 const Frontend = () => {
   const frontendSkills = [
     { name: 'HTML', icon: faHtml5, level: 90, class: 'skill-html' },
@@ -14,7 +23,7 @@ const Frontend = () => {
   ];
 
   return (
-    <div className="skills_section">
+    <div className="skills_section" style={styles.card}>
       <h3 className="skills_title">Frontend Developer</h3>
       <div className="skills_container">
         {frontendSkills.map((skill, index) => (

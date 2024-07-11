@@ -13,6 +13,15 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper';
+const styles = {
+  card: {
+    backgroundColor: 'var(--background-color)',
+    color: 'var(--text-color)',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 
 const Testimonials = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -29,7 +38,7 @@ const Testimonials = () => {
   const displayedProjects = Data.slice(currentPage * projectsPerPage, (currentPage + 1) * projectsPerPage);
 
   return (
-    <section className="testimonial_section" id="testimonials">
+    <section className="testimonial_section" id="testimonials" style={styles.card}>
       <h2 className="section_title">Portfolio</h2>
       <span className="section_subtitle">Mes Projets</span>
 

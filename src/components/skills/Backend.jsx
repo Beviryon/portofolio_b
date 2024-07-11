@@ -4,6 +4,15 @@ import { faServer, faDatabase } from '@fortawesome/free-solid-svg-icons';
 import { faNodeJs, faPhp } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
 
+const styles = {
+  card: {
+    backgroundColor: 'var(--background-color)',
+    color: 'var(--text-color)',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+};
 const Backend = () => {
   const backendSkills = [
     { name: 'Strapi', icon: faServer, level: 85, class: 'skill-strapi' },
@@ -15,7 +24,7 @@ const Backend = () => {
   ];
 
   return (
-    <div className="skills_section">
+    <div className="skills_section" style={styles.card}>
       <h3 className="skills_title">Backend Developer</h3>
       <div className="skills_container">
         {backendSkills.map((skill, index) => (
