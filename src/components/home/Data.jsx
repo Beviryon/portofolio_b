@@ -62,7 +62,7 @@ const Data = () => {
          <a href="#contact" className=" button button--flex">
             Say Hello
 
-            <svg
+            {/* <svg
                   class="button__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -92,7 +92,7 @@ const Data = () => {
                      10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
                     fill="var(--container-color)"
                   ></path>
-            </svg>
+            </svg> */}
          </a>
     </div>
   )

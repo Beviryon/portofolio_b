@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServer, faDatabase, faCode } from '@fortawesome/free-solid-svg-icons';
 import { faNodeJs, faPhp, faPython } from '@fortawesome/free-brands-svg-icons';
 import './style.css';
+import './skills.css'
 
 const styles = {
   card: {
@@ -28,7 +29,7 @@ const Backend = () => {
     { name: 'Strapi', icon: faServer, level: 85, class: 'skill-strapi' },
   ];
 
-  const skillsToShow = showAll ? backendSkills : backendSkills.slice(0, 3);
+  const skillsToShow = showAll ? backendSkills : backendSkills.slice(0, 4);
 
   return (
     <div className="skills_section" style={styles.card}>

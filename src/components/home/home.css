@@ -126,7 +126,7 @@
     }
     
     .home_subtitle{
-        padding-left: 3.7rem;
+        /* padding-left: 3.7rem; */
         margin-bottom: var(--mb-1);
     }
 
@@ -138,6 +138,7 @@
     .home_description {
         max-width: initial;
         margin-bottom: var(--mb-2-5);
+        text-align: justify;
     }
 
     .home_ime {

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact, faVuejs, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { faFileCode, faCode, faCogs, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
+import './skills.css'
 
 const styles = {
   card: {
