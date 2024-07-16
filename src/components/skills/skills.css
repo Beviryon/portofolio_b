@@ -86,3 +86,36 @@
         font-size: var(--small-font-size, 0.875rem); /* Correction de la classe et taille réduite */
     }
 }
+
+/* Front */
+.show_more_button {
+    background-color: var(--button-background-color);
+    color: #940202;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .show_more_button:hover {
+    background-color: var(--button-hover-background-color);
+  }
+  
+  /* Back */
+  .show_more_button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .show_more_button:hover {
+    background-color: var(--button-hover-background-color);
+  }
+  

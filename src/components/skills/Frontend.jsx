@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact, faVuejs, faSass, faNodeJs  } from '@fortawesome/free-brands-svg-icons';
-import { faFileCode, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact, faVuejs, faSass, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faFileCode, faCode, faCogs, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const styles = {
@@ -13,25 +13,32 @@ const styles = {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   },
 };
+
 const Frontend = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const frontendSkills = [
+    { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
+    { name: 'JavaScript', icon: faJsSquare, level: 60, class: 'skill-js' },
+    { name: 'Nuxt.js', icon: faVuejs, level: 40, class: 'skill-nuxt' },
+    { name: 'Svelte', icon: faFileCode, level: 60, class: 'skill-svelte' },
+    { name: 'Kotlin', icon: faCode, level: 50, class: 'skill-kotlin' },
+    { name: 'Next.js', icon: faNodeJs, level: 50, class: 'skill-next' },
     { name: 'HTML', icon: faHtml5, level: 90, class: 'skill-html' },
     { name: 'CSS', icon: faCss3Alt, level: 85, class: 'skill-css' },
-    { name: 'JavaScript', icon: faJsSquare, level: 80, class: 'skill-js' },
-    { name: 'Bootstrap', icon: faBootstrap, level: 75, class: 'skill-bootstrap' },
-    { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
-    { name: 'Nuxt.js', icon: faVuejs, level: 65, class: 'skill-nuxt' },
-    { name: 'Svelte', icon: faFileCode, level: 60, class: 'skill-svelte' },
-    { name: 'Kotlin', icon: faCode, level: 55, class: 'skill-kotlin' },
-    { name: 'Next.js', icon: faNodeJs, level: 50, class: 'skill-next' },
     { name: 'TypeScript', icon: faJsSquare, level: 75, class: 'skill-typescript' },
+    { name: 'PowerApps', icon: faCogs, level: 50, class: 'skill-powerapps' },
+    { name: 'LogicApps', icon: faProjectDiagram, level: 45, class: 'skill-logicapps' },
+    { name: 'Bootstrap', icon: faBootstrap, level: 75, class: 'skill-bootstrap' },
   ];
+
+  const skillsToShow = showAll ? frontendSkills : frontendSkills.slice(0, 3);
 
   return (
     <div className="skills_section" style={styles.card}>
       <h3 className="skills_title">Frontend Developer</h3>
       <div className="skills_container">
-        {frontendSkills.map((skill, index) => (
+        {skillsToShow.map((skill, index) => (
           <div className={`skills_card ${skill.class}`} key={index}>
             <FontAwesomeIcon icon={skill.icon} className="skills_icon" />
             <h3 className="skills_name">{skill.name}</h3>
@@ -41,6 +48,9 @@ const Frontend = () => {
           </div>
         ))}
       </div>
+      <button className="show_more_button" onClick={() => setShowAll(!showAll)}>
+        {showAll ? 'Voir moins -' : 'Voir plus +'}
+      </button>
     </div>
   );
 };
