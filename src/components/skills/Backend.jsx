@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServer, faDatabase } from '@fortawesome/free-solid-svg-icons';
-import { faNodeJs, faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faNodeJs, faPhp, faPython  } from '@fortawesome/free-brands-svg-icons';
+import { faFileCode, faCode, faCogs, faProjectDiagram,  } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const styles = {
@@ -21,6 +22,8 @@ const Backend = () => {
     { name: 'PHP', icon: faPhp, level: 70, class: 'skill-php' },
     { name: 'Express.js', icon: faServer, level: 65, class: 'skill-express' },
     { name: 'Microsoft Azure', icon: faServer, level: 60, class: 'skill-azure' },
+    { name: 'Python', icon: faPython , level: 60, class: 'skill-pyton' },
+    { name: 'Flask', icon: faCode, level: 60, class: 'skill-flask' },
   ];
 
   return (

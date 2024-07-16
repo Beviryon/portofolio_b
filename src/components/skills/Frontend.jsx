@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJsSquare, faBootstrap, faReact, faVuejs, faSass, faNodeJs  } from '@fortawesome/free-brands-svg-icons';
+import { faFileCode, faCode } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const styles = {
@@ -19,7 +20,11 @@ const Frontend = () => {
     { name: 'JavaScript', icon: faJsSquare, level: 80, class: 'skill-js' },
     { name: 'Bootstrap', icon: faBootstrap, level: 75, class: 'skill-bootstrap' },
     { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
-    { name: 'React.js', icon: faReact, level: 70, class: 'skill-react' },
+    { name: 'Nuxt.js', icon: faVuejs, level: 65, class: 'skill-nuxt' },
+    { name: 'Svelte', icon: faFileCode, level: 60, class: 'skill-svelte' },
+    { name: 'Kotlin', icon: faCode, level: 55, class: 'skill-kotlin' },
+    { name: 'Next.js', icon: faNodeJs, level: 50, class: 'skill-next' },
+    { name: 'TypeScript', icon: faJsSquare, level: 75, class: 'skill-typescript' },
   ];
 
   return (
