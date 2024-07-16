@@ -19,11 +19,11 @@ body.light {
 }
 
 body.dark {
-  --background-color: #c8c8c9;
-  --text-color: #000000;
+  --background-color: #536a74;
+  --text-color: #ffffff;
 }
 
-body {
+body.dark {
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
