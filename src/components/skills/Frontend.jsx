@@ -32,7 +32,7 @@ const Frontend = () => {
     { name: 'Bootstrap', icon: faBootstrap, level: 75, class: 'skill-bootstrap' },
   ];
 
-  const skillsToShow = showAll ? frontendSkills : frontendSkills.slice(0, 3);
+  const skillsToShow = showAll ? frontendSkills : frontendSkills.slice(0, 4);
 
   return (
     <div className="skills_section" style={styles.card}>

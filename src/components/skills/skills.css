@@ -1,23 +1,22 @@
-/* ::::::::::::::: BASE STYLES ::::::::::::::: */
 .skills_container {
     display: grid;
     grid-template-columns: repeat(2, 350px);
-    column-gap: 2rem; /* Espace entre les colonnes */
-    row-gap: 2rem; /* Espace entre les lignes */
+    column-gap: 2rem; 
+    row-gap: 2rem; 
     justify-content: center;
 }
 
 .skills_content {
-    background-color: var(--container-color, #f9f9f9); /* Utilisation de couleur par défaut */
+    background-color: var(--container-color, #f9f9f9); 
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une légère ombre pour l'effet 3D */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 2rem;
     border-radius: 1rem;
-    transition: transform 0.2s ease-in-out; /* Animation légère au survol */
+    transition: transform 0.2s ease-in-out; 
 }
 
 .skills_content:hover {
-    transform: scale(1.05); /* Effet d'agrandissement au survol */
+    transform: scale(1.05); 
 }
 
 .skills_title {
@@ -29,23 +28,23 @@
 
 .skills_box {
     display: flex;
-    justify-content: space-around; /* Répartition équitable des éléments */
+    justify-content: space-around; 
 }
 
 .skills_group {
     display: grid;
     align-items: flex-start;
-    row-gap: 1rem; /* Espace entre les lignes */
+    row-gap: 1rem; 
 }
 
 .skills_data {
     display: flex;
-    align-items: center; /* Alignement centré */
-    column-gap: 0.5rem; /* Espace entre les éléments */
+    align-items: center; 
+    column-gap: 0.5rem; 
 }
 
 .skills .bx-badge-check {
-    font-size: 1.25rem; /* Taille de l'icône */
+    font-size: 1.25rem; 
     color: var(--title-color, #333);
 }
 
@@ -56,11 +55,10 @@
 }
 
 .skills_level {
-    font-size: var(--small-font-size, 0.875rem); /* Correction du nom de classe */
-    color: #666; /* Couleur plus subtile */
+    font-size: var(--small-font-size, 0.875rem); 
+    color: #666;
 }
 
-/* ::::::::::::::: BREAKPOINTS ::::::::::::::: */
 /* ::: Pour les appareils de grande taille ::: */
 @media screen and (max-width: 992px) {
     .skills_container {
