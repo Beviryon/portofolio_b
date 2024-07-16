@@ -35,15 +35,17 @@
 }
 
 .footer_social-link {
-    background-color: var(--title-color);
-    color: var(--container-color);
+    background-color: #fff;
+    color: #000;
     font-size: 1.125rem;
     padding: 0.4rem;
     border-radius: 0.5rem;
     display: inline-flex;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 .footer_social-link:hover {
     background-color: var(--title-color-dark);
+    color: #ffffff;
 }
 
 .footer_copy {

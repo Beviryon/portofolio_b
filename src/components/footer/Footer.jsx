@@ -7,7 +7,7 @@ const styles = {
       color: 'var(--text-color)',
       padding: '20px',
       borderRadius: '10px',
-      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
     },
   };
 const Footer = () => {
