@@ -28,7 +28,7 @@ const About = () => {
                 <p className="about_description">
                 Autodidacte depuis mon plus jeune âge, j'aime 
                 apprendre de nouvelles choses pour améliore
-                r mes compétences. De nature très curieuse, 
+                r mes compétences. De nature très curieux, 
                 j'adore le monde du web et des nouvelles 
                 technologies, ce que j'aime le plus c'est l'art 
                 et la précision derrière chaque conception. Avec
