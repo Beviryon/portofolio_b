@@ -1,7 +1,7 @@
 import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/CV_BEVIRYON.pdf"
+import CV from "../../assets/BEVIRYON-CONTRAT-D'APPRENTISSAGE-MASTER.pdf"
 import Info from './Info';
 
 const styles = {
